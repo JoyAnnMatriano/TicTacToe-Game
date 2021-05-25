@@ -29,6 +29,7 @@ namespace TicTacToe_Game
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label label1;
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@ namespace TicTacToe_Game
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -124,7 +126,7 @@ namespace TicTacToe_Game
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(201, 476);
+            this.button10.Location = new System.Drawing.Point(213, 481);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(162, 52);
             this.button10.TabIndex = 0;
@@ -132,11 +134,22 @@ namespace TicTacToe_Game
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(111, 31);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(385, 86);
+            label1.TabIndex = 1;
+            label1.Text = "TIC TAC TOE";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 579);
+            this.Controls.Add(label1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -151,6 +164,7 @@ namespace TicTacToe_Game
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
