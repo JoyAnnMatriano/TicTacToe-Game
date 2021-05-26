@@ -43,8 +43,19 @@ namespace TicTacToe_Game
             label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(111, 31);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(385, 86);
+            label1.TabIndex = 1;
+            label1.Text = "TIC TAC TOE";
+            // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(130, 140);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 95);
@@ -54,6 +65,7 @@ namespace TicTacToe_Game
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Location = new System.Drawing.Point(242, 140);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 95);
@@ -63,6 +75,7 @@ namespace TicTacToe_Game
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Location = new System.Drawing.Point(354, 140);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 95);
@@ -72,6 +85,7 @@ namespace TicTacToe_Game
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Location = new System.Drawing.Point(129, 241);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(106, 95);
@@ -81,6 +95,7 @@ namespace TicTacToe_Game
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Location = new System.Drawing.Point(241, 241);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(106, 95);
@@ -90,6 +105,7 @@ namespace TicTacToe_Game
             // 
             // button6
             // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Location = new System.Drawing.Point(353, 241);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(106, 95);
@@ -99,6 +115,7 @@ namespace TicTacToe_Game
             // 
             // button7
             // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Location = new System.Drawing.Point(129, 342);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(106, 95);
@@ -108,6 +125,7 @@ namespace TicTacToe_Game
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Location = new System.Drawing.Point(241, 342);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(106, 95);
@@ -117,6 +135,7 @@ namespace TicTacToe_Game
             // 
             // button9
             // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Location = new System.Drawing.Point(354, 342);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(106, 95);
@@ -133,16 +152,6 @@ namespace TicTacToe_Game
             this.button10.Text = "Play Again";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label1.Location = new System.Drawing.Point(111, 31);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(385, 86);
-            label1.TabIndex = 1;
-            label1.Text = "TIC TAC TOE";
             // 
             // Form1
             // 
