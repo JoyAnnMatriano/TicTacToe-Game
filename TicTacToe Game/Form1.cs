@@ -105,14 +105,14 @@ namespace TicTacToe_Game
                     nanalo = "X";
 
 
-                MessageBox.Show(nanalo + "Wins!");
+                MessageBox.Show(nanalo + " Wins!");
             }//end ng if
 
             else
             {
 
                 if (pasa_count == 9)
-                    MessageBox.Show("Draw!");
+                    MessageBox.Show(" Draw!");
 
 
             }
@@ -159,6 +159,31 @@ namespace TicTacToe_Game
 
             }//end ng try
             catch { }
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            pasa = true;
+            pasa_count = 0;
+
+            try
+            {
+                foreach (Component c in Controls)
+                {
+                    Button btn = (Button)c;
+                    btn.Enabled = true;
+                    btn.Text = " ";
+
+                }//foreach end
+
+            }//end ng try
+            catch { }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

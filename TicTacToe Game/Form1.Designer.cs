@@ -40,16 +40,20 @@ namespace TicTacToe_Game
             this.bx8 = new System.Windows.Forms.Button();
             this.bx9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label1.Location = new System.Drawing.Point(108, 38);
+            label1.BackColor = System.Drawing.Color.SaddleBrown;
+            label1.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            label1.Location = new System.Drawing.Point(77, 38);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(385, 86);
+            label1.Size = new System.Drawing.Size(403, 77);
             label1.TabIndex = 1;
             label1.Text = "TIC TAC TOE";
             // 
@@ -153,12 +157,21 @@ namespace TicTacToe_Game
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.playAgain_btn);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::TicTacToe_Game.Properties.Resources.bg1;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(label1);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(560, 555);
+            this.panel1.TabIndex = 2;
+            // 
             // TicTacToe_bx_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 579);
-            this.Controls.Add(label1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.bx9);
             this.Controls.Add(this.bx8);
@@ -169,12 +182,14 @@ namespace TicTacToe_Game
             this.Controls.Add(this.bx4);
             this.Controls.Add(this.bx2);
             this.Controls.Add(this.bx1);
+            this.Controls.Add(this.panel1);
             this.Name = "TicTacToe_bx_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Tic Tac Toe";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -190,6 +205,7 @@ namespace TicTacToe_Game
         private System.Windows.Forms.Button bx8;
         private System.Windows.Forms.Button bx9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
