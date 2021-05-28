@@ -101,7 +101,7 @@ namespace TicTacToe_Game
 
             if (may_nanalo_na)
             {
-                disablebuttons();
+                disableButtons();
 
                 String nanalo = " ";
                 if (pasa)
@@ -126,18 +126,20 @@ namespace TicTacToe_Game
 
         }//end ng look panalo
 
-        private void disablebuttons()
+        private void disableButtons()
 
         {
-
-            foreach (Component c in Controls)
+            try
             {
-                Button btn = (Button)c;
-                btn.Enabled = false;
+                foreach (Component c in Controls)
+                {
+                    Button btn = (Button)c;
+                    btn.Enabled = false;
 
-            }//foreach end
+                }//foreach end
 
-
+            }//end ng try
+            catch { }
         }
     }
 }
