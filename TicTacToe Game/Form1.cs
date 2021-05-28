@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace TicTacToe_Game
 {
-    public partial class Form1 : Form
+    public partial class TicTacToe_bx_main : Form
     {
         bool pasa = true;
         int pasa_count = 0;
    
 
 
-        public Form1()
+        public TicTacToe_bx_main()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
        
 
@@ -140,6 +135,31 @@ namespace TicTacToe_Game
 
             }//end ng try
             catch { }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playAgain_btn(object sender, EventArgs e)
+        {
+            pasa = true;
+            pasa_count = 0;
+
+            try
+            {
+                foreach (Component c in Controls)
+                {
+                    Button btn = (Button)c;
+                    btn.Enabled = true;
+                    btn.Text = " ";
+
+                }//foreach end
+
+            }//end ng try
+            catch { }
+
         }
     }
 }

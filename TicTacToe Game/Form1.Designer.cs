@@ -1,7 +1,7 @@
 ﻿
 namespace TicTacToe_Game
 {
-    partial class Form1
+    partial class TicTacToe_bx_main
     {
         /// <summary>
         ///  Required designer variable.
@@ -151,9 +151,9 @@ namespace TicTacToe_Game
             this.button10.TabIndex = 0;
             this.button10.Text = "Play Again";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button3_Click);
+            this.button10.Click += new System.EventHandler(this.playAgain_btn);
             // 
-            // Form1
+            // TicTacToe_bx_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,8 +169,10 @@ namespace TicTacToe_Game
             this.Controls.Add(this.bx4);
             this.Controls.Add(this.bx2);
             this.Controls.Add(this.bx1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "TicTacToe_bx_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Tic Tac Toe";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
