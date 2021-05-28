@@ -14,12 +14,19 @@ namespace TicTacToe_Game
     {
         bool pasa = true;
         int pasa_count = 0;
+   
 
 
         public Form1()
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+       
 
         private void bx_click(object sender, EventArgs e)
         {
@@ -30,6 +37,34 @@ namespace TicTacToe_Game
                 btn.Text = "O";
             pasa = !pasa;
             btn.Enabled = false;
+        }
+
+        private void lookPanalo()
+        {
+            bool may_nanalo_na = false;
+
+
+            //bx 1 possible answers,,,, panalo
+            if ((bx1.Text == bx2.Text) && (bx2.Text == bx3.Text) && (!bx1.Enabled))
+                may_nanalo_na = true;
+            if ((bx1.Text == bx4.Text) && (bx4.Text == bx7.Text) && (!bx1.Enabled))
+                may_nanalo_na = true;
+            if ((bx1.Text == bx5.Text) && (bx5.Text == bx9.Text) && (!bx1.Enabled))
+                may_nanalo_na = true;
+
+
+
+            if(may_nanalo_na)
+            {
+                String nanalo = " ";
+                if (pasa)
+                    nanalo = "O";
+                else
+                    nanalo = "X";
+
+
+                MessageBox.Show(nanalo + "Wins!");
+            }
         }
     }
 }
