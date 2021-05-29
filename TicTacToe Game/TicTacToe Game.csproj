@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>TicTacToe_Game</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>TicTacToe_Game.Program</StartupObject>
