@@ -186,5 +186,28 @@ namespace TicTacToe_Game
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btn_enter(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (pasa)
+                btn.Text = "X";
+            else
+                btn.Text = "O";
+        }//end ng btn_enter
+
+        private void btn_leave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.Enabled)
+            {
+                btn.Text = "";
+            }//end ng if
+
+        }//end ng btn_leave
     }
 }

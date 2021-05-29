@@ -48,107 +48,136 @@ namespace TicTacToe_Game
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = System.Drawing.Color.SaddleBrown;
-            label1.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Font = new System.Drawing.Font("Hobo Std", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            label1.Location = new System.Drawing.Point(77, 38);
+            label1.Location = new System.Drawing.Point(53, 23);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(403, 77);
+            label1.Size = new System.Drawing.Size(442, 91);
             label1.TabIndex = 1;
             label1.Text = "TIC TAC TOE";
+            label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bx1
             // 
             this.bx1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx1.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx1.Location = new System.Drawing.Point(130, 140);
             this.bx1.Name = "bx1";
             this.bx1.Size = new System.Drawing.Size(106, 95);
             this.bx1.TabIndex = 0;
             this.bx1.UseVisualStyleBackColor = true;
             this.bx1.Click += new System.EventHandler(this.bx_click);
+            this.bx1.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx1.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx2
             // 
             this.bx2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx2.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx2.Location = new System.Drawing.Point(242, 140);
             this.bx2.Name = "bx2";
             this.bx2.Size = new System.Drawing.Size(106, 95);
             this.bx2.TabIndex = 0;
             this.bx2.UseVisualStyleBackColor = true;
             this.bx2.Click += new System.EventHandler(this.bx_click);
+            this.bx2.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx2.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx3
             // 
             this.bx3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx3.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx3.Location = new System.Drawing.Point(354, 140);
             this.bx3.Name = "bx3";
             this.bx3.Size = new System.Drawing.Size(106, 95);
             this.bx3.TabIndex = 0;
             this.bx3.UseVisualStyleBackColor = true;
             this.bx3.Click += new System.EventHandler(this.bx_click);
+            this.bx3.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx3.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx4
             // 
             this.bx4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx4.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx4.Location = new System.Drawing.Point(129, 241);
             this.bx4.Name = "bx4";
             this.bx4.Size = new System.Drawing.Size(106, 95);
             this.bx4.TabIndex = 0;
             this.bx4.UseVisualStyleBackColor = true;
             this.bx4.Click += new System.EventHandler(this.bx_click);
+            this.bx4.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx4.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx5
             // 
             this.bx5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx5.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx5.Location = new System.Drawing.Point(241, 241);
             this.bx5.Name = "bx5";
             this.bx5.Size = new System.Drawing.Size(106, 95);
             this.bx5.TabIndex = 0;
             this.bx5.UseVisualStyleBackColor = true;
             this.bx5.Click += new System.EventHandler(this.bx_click);
+            this.bx5.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx5.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx6
             // 
             this.bx6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx6.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx6.Location = new System.Drawing.Point(353, 241);
             this.bx6.Name = "bx6";
             this.bx6.Size = new System.Drawing.Size(106, 95);
             this.bx6.TabIndex = 0;
             this.bx6.UseVisualStyleBackColor = true;
             this.bx6.Click += new System.EventHandler(this.bx_click);
+            this.bx6.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx6.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx7
             // 
             this.bx7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx7.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx7.Location = new System.Drawing.Point(129, 342);
             this.bx7.Name = "bx7";
             this.bx7.Size = new System.Drawing.Size(106, 95);
             this.bx7.TabIndex = 0;
             this.bx7.UseVisualStyleBackColor = true;
             this.bx7.Click += new System.EventHandler(this.bx_click);
+            this.bx7.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx7.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx8
             // 
             this.bx8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx8.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx8.Location = new System.Drawing.Point(241, 342);
             this.bx8.Name = "bx8";
             this.bx8.Size = new System.Drawing.Size(106, 95);
             this.bx8.TabIndex = 0;
             this.bx8.UseVisualStyleBackColor = true;
             this.bx8.Click += new System.EventHandler(this.bx_click);
+            this.bx8.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx8.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // bx9
             // 
             this.bx9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bx9.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bx9.Location = new System.Drawing.Point(354, 342);
             this.bx9.Name = "bx9";
             this.bx9.Size = new System.Drawing.Size(106, 95);
             this.bx9.TabIndex = 0;
             this.bx9.UseVisualStyleBackColor = true;
             this.bx9.Click += new System.EventHandler(this.bx_click);
+            this.bx9.MouseEnter += new System.EventHandler(this.btn_enter);
+            this.bx9.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
             // button10
             // 
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button10.Location = new System.Drawing.Point(213, 481);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(162, 52);
