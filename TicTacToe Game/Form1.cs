@@ -42,56 +42,30 @@ namespace TicTacToe_Game
             bool may_nanalo_na = false;
 
 
-            //bx 1 possible answers,,,, panalo
+            //horizontal
+
             if ((bx1.Text == bx2.Text) && (bx2.Text == bx3.Text) && (!bx1.Enabled))
                 may_nanalo_na = true;
+            else if ((bx4.Text == bx5.Text) && (bx5.Text == bx6.Text) && (!bx4.Enabled))
+                may_nanalo_na = true;
+            else if ((bx7.Text == bx8.Text) && (bx8.Text == bx9.Text) && (!bx7.Enabled))
+                may_nanalo_na = true;
+
+            //vertical
+
             if ((bx1.Text == bx4.Text) && (bx4.Text == bx7.Text) && (!bx1.Enabled))
                 may_nanalo_na = true;
-            if ((bx1.Text == bx5.Text) && (bx5.Text == bx9.Text) && (!bx1.Enabled))
+            else if ((bx2.Text == bx5.Text) && (bx5.Text == bx8.Text) && (!bx2.Enabled))
+                may_nanalo_na = true;
+            else if ((bx3.Text == bx6.Text) && (bx6.Text == bx9.Text) && (!bx3.Enabled))
                 may_nanalo_na = true;
 
 
-            //bx2
-            if ((bx2.Text == bx5.Text) && (bx5.Text == bx8.Text) && (!bx2.Enabled))
+            //diagonal
+            else if ((bx1.Text == bx5.Text) && (bx5.Text == bx9.Text) && (!bx1.Enabled))
                 may_nanalo_na = true;
-
-
-            //bx3
-            if ((bx3.Text == bx6.Text) && (bx6.Text == bx9.Text) && (!bx3.Enabled))
+            else if ((bx3.Text == bx5.Text) && (bx5.Text == bx7.Text) && (!bx3.Enabled))
                 may_nanalo_na = true;
-
-            if ((bx3.Text == bx5.Text) && (bx5.Text == bx7.Text) && (!bx3.Enabled))
-                may_nanalo_na = true;
-
-
-            //bx4
-            if ((bx4.Text == bx5.Text) && (bx5.Text == bx6.Text) && (!bx3.Enabled))
-                may_nanalo_na = true;
-
-            //bx 7
-            if ((bx7.Text == bx4.Text) && (bx4.Text == bx1.Text) && (!bx7.Enabled))
-                may_nanalo_na = true;
-            if ((bx7.Text == bx5.Text) && (bx5.Text == bx3.Text) && (!bx7.Enabled))
-                may_nanalo_na = true;
-            if ((bx7.Text == bx8.Text) && (bx8.Text == bx9.Text) && (!bx7.Enabled))
-                may_nanalo_na = true;
-
-
-            //bx 8
-            if ((bx8.Text == bx5.Text) && (bx5.Text == bx2.Text) && (!bx8.Enabled))
-                may_nanalo_na = true;
-
-
-            //bx9
-            if ((bx9.Text == bx8.Text) && (bx8.Text == bx7.Text) && (!bx9.Enabled))
-                may_nanalo_na = true;
-            if ((bx9.Text == bx5.Text) && (bx5.Text == bx1.Text) && (!bx9.Enabled))
-                may_nanalo_na = true;
-            if ((bx9.Text == bx6.Text) && (bx6.Text == bx3.Text) && (!bx9.Enabled))
-                may_nanalo_na = true;
-
-
-
 
 
             if (may_nanalo_na)
@@ -103,8 +77,6 @@ namespace TicTacToe_Game
                     nanalo = "O";
                 else
                     nanalo = "X";
-
-
                 MessageBox.Show(nanalo + " Wins!");
             }//end ng if
 
@@ -184,7 +156,6 @@ namespace TicTacToe_Game
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
