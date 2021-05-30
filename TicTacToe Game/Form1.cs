@@ -42,25 +42,64 @@ namespace TicTacToe_Game
             bool may_nanalo_na = false;
             //horizontal
             if ((bx1.Text == bx2.Text) && (bx2.Text == bx3.Text) && (!bx1.Enabled))
+            {
                 may_nanalo_na = true;
+                bx1.BackColor = Color.MediumSeaGreen;
+                bx2.BackColor = Color.MediumSeaGreen;
+                bx3.BackColor = Color.MediumSeaGreen;
+            }
             else if ((bx4.Text == bx5.Text) && (bx5.Text == bx6.Text) && (!bx4.Enabled))
+            {
                 may_nanalo_na = true;
+                bx4.BackColor = Color.MediumSeaGreen;
+                bx5.BackColor = Color.MediumSeaGreen;
+                bx6.BackColor = Color.MediumSeaGreen;
+            }
             else if ((bx7.Text == bx8.Text) && (bx8.Text == bx9.Text) && (!bx7.Enabled))
+            {
                 may_nanalo_na = true;
-
+                bx7.BackColor = Color.MediumSeaGreen;
+                bx8.BackColor = Color.MediumSeaGreen;
+                bx9.BackColor = Color.MediumSeaGreen;
+            }
             //vertical
             if ((bx1.Text == bx4.Text) && (bx4.Text == bx7.Text) && (!bx1.Enabled))
+            {
                 may_nanalo_na = true;
+                bx1.BackColor = Color.MediumSeaGreen;
+                bx4.BackColor = Color.MediumSeaGreen;
+                bx7.BackColor = Color.MediumSeaGreen;
+            }
             else if ((bx2.Text == bx5.Text) && (bx5.Text == bx8.Text) && (!bx2.Enabled))
+            {
                 may_nanalo_na = true;
+                bx2.BackColor = Color.MediumSeaGreen;
+                bx5.BackColor = Color.MediumSeaGreen;
+                bx8.BackColor = Color.MediumSeaGreen;
+            }
             else if ((bx3.Text == bx6.Text) && (bx6.Text == bx9.Text) && (!bx3.Enabled))
+            {
                 may_nanalo_na = true;
+                bx3.BackColor = Color.MediumSeaGreen;
+                bx6.BackColor = Color.MediumSeaGreen;
+                bx9.BackColor = Color.MediumSeaGreen;
+            }
 
             //diagonal
             else if ((bx1.Text == bx5.Text) && (bx5.Text == bx9.Text) && (!bx1.Enabled))
+            {
                 may_nanalo_na = true;
+                bx1.BackColor = Color.MediumSeaGreen;
+                bx5.BackColor = Color.MediumSeaGreen;
+                bx9.BackColor = Color.MediumSeaGreen;
+            }
             else if ((bx3.Text == bx5.Text) && (bx5.Text == bx7.Text) && (!bx3.Enabled))
+            {
                 may_nanalo_na = true;
+                bx3.BackColor = Color.MediumSeaGreen;
+                bx5.BackColor = Color.MediumSeaGreen;
+                bx7.BackColor = Color.MediumSeaGreen;
+            }
 
             if (may_nanalo_na)
             {

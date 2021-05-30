@@ -61,7 +61,7 @@ namespace TicTacToe_Game
             // bx1
             // 
             this.bx1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx1.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx1.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx1.Location = new System.Drawing.Point(130, 140);
             this.bx1.Name = "bx1";
             this.bx1.Size = new System.Drawing.Size(106, 95);
@@ -74,7 +74,7 @@ namespace TicTacToe_Game
             // bx2
             // 
             this.bx2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx2.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx2.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx2.Location = new System.Drawing.Point(242, 140);
             this.bx2.Name = "bx2";
             this.bx2.Size = new System.Drawing.Size(106, 95);
@@ -87,7 +87,7 @@ namespace TicTacToe_Game
             // bx3
             // 
             this.bx3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx3.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx3.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx3.Location = new System.Drawing.Point(354, 140);
             this.bx3.Name = "bx3";
             this.bx3.Size = new System.Drawing.Size(106, 95);
@@ -100,7 +100,7 @@ namespace TicTacToe_Game
             // bx4
             // 
             this.bx4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx4.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx4.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx4.Location = new System.Drawing.Point(129, 241);
             this.bx4.Name = "bx4";
             this.bx4.Size = new System.Drawing.Size(106, 95);
@@ -113,7 +113,7 @@ namespace TicTacToe_Game
             // bx5
             // 
             this.bx5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx5.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx5.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx5.Location = new System.Drawing.Point(241, 241);
             this.bx5.Name = "bx5";
             this.bx5.Size = new System.Drawing.Size(106, 95);
@@ -126,7 +126,7 @@ namespace TicTacToe_Game
             // bx6
             // 
             this.bx6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx6.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx6.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx6.Location = new System.Drawing.Point(353, 241);
             this.bx6.Name = "bx6";
             this.bx6.Size = new System.Drawing.Size(106, 95);
@@ -139,7 +139,7 @@ namespace TicTacToe_Game
             // bx7
             // 
             this.bx7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx7.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx7.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx7.Location = new System.Drawing.Point(129, 342);
             this.bx7.Name = "bx7";
             this.bx7.Size = new System.Drawing.Size(106, 95);
@@ -152,7 +152,7 @@ namespace TicTacToe_Game
             // bx8
             // 
             this.bx8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx8.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx8.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx8.Location = new System.Drawing.Point(241, 342);
             this.bx8.Name = "bx8";
             this.bx8.Size = new System.Drawing.Size(106, 95);
@@ -165,7 +165,7 @@ namespace TicTacToe_Game
             // bx9
             // 
             this.bx9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bx9.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx9.Font = new System.Drawing.Font("Lithos Pro Regular", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bx9.Location = new System.Drawing.Point(354, 342);
             this.bx9.Name = "bx9";
             this.bx9.Size = new System.Drawing.Size(106, 95);
