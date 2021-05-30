@@ -19,6 +19,12 @@ namespace TicTacToe_Game
         {
             InitializeComponent();
         }
+        private void btn_again_Click(object sender, EventArgs e)
+        {
+            Button btn_again = (Button)sender;
+            btn_again.Enabled = true;
+            Application.Restart();
+        }
         private void bx_click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -29,7 +35,6 @@ namespace TicTacToe_Game
             pasa = !pasa;
             btn.Enabled = false;
             pasa_count++;
-
             lookPanalo();
         }
         private void lookPanalo()
@@ -60,7 +65,6 @@ namespace TicTacToe_Game
             if (may_nanalo_na)
             {
                 disableButtons();
-
                 String nanalo = " ";
                 if (pasa)
                     nanalo = "O";

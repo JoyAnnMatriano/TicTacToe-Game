@@ -184,6 +184,7 @@ namespace TicTacToe_Game
             this.btn_again.TabIndex = 0;
             this.btn_again.Text = "Play Again";
             this.btn_again.UseVisualStyleBackColor = true;
+            this.btn_again.Click += new System.EventHandler(this.btn_again_Click);
             // 
             // bg_pic
             // 
