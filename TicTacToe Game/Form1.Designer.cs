@@ -177,13 +177,14 @@ namespace TicTacToe_Game
             // 
             // btn_again
             // 
+            this.btn_again.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.btn_again.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_again.Location = new System.Drawing.Point(213, 481);
             this.btn_again.Name = "btn_again";
             this.btn_again.Size = new System.Drawing.Size(162, 52);
             this.btn_again.TabIndex = 0;
             this.btn_again.Text = "Play Again";
-            this.btn_again.UseVisualStyleBackColor = true;
+            this.btn_again.UseVisualStyleBackColor = false;
             this.btn_again.Click += new System.EventHandler(this.btn_again_Click);
             // 
             // bg_pic
