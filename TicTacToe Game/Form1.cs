@@ -18,7 +18,19 @@ namespace TicTacToe_Game
         public TicTacToe_bx_main()
         {
             InitializeComponent();
+            btn_again.MouseEnter += MouseEnter1;
+            btn_again.MouseLeave += MouseLeave1;
+
         }
+        private void MouseEnter1(object sender, EventArgs e)
+        {
+            btn_again.BackColor = Color.MediumSeaGreen;
+        }
+        private void MouseLeave1(object sender, EventArgs e)
+        {
+            btn_again.BackColor = SystemColors.ButtonFace;
+        }
+
         private void btn_again_Click(object sender, EventArgs e)
         {
             Button btn_again = (Button)sender;
@@ -132,7 +144,6 @@ namespace TicTacToe_Game
             }//end ng try
             catch { }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -155,15 +166,6 @@ namespace TicTacToe_Game
 
             }//end ng try
             catch { }
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
         }
 
         private void btn_enter(object sender, EventArgs e)

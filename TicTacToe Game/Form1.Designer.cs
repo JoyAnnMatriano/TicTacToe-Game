@@ -56,7 +56,6 @@ namespace TicTacToe_Game
             label1.Size = new System.Drawing.Size(442, 91);
             label1.TabIndex = 1;
             label1.Text = "TIC TAC TOE";
-            label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bx1
             // 
@@ -177,7 +176,7 @@ namespace TicTacToe_Game
             // 
             // btn_again
             // 
-            this.btn_again.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btn_again.BackColor = System.Drawing.Color.Ivory;
             this.btn_again.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_again.Location = new System.Drawing.Point(213, 481);
             this.btn_again.Name = "btn_again";
