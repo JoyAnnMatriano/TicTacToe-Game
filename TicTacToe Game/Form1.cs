@@ -127,6 +127,7 @@ namespace TicTacToe_Game
                 {
                     Button btn = (Button)c;
                     btn.Enabled = false;
+                    btn_again.Enabled = true;
                 }//foreach end
             }//end ng try
             catch { }
