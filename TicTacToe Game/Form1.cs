@@ -41,7 +41,7 @@ namespace TicTacToe_Game
         {
             Button btn = (Button)sender;
             if (pasa)
-                btn.Text = "X";
+                btn.Text = "x";
             else
                 btn.Text = "O";
             pasa = !pasa;
