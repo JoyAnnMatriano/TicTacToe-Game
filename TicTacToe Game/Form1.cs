@@ -18,25 +18,24 @@ namespace TicTacToe_Game
         public TicTacToe_bx_main()
         {
             InitializeComponent();
-            btn_again.MouseEnter += MouseEnter1;
-            btn_again.MouseLeave += MouseLeave1;
+            reset_btn.MouseEnter += MouseEnter1;
+            reset_btn.MouseLeave += MouseLeave1;
+
+            quit_btn.MouseEnter += MouseEnter1;
+            quit_btn.MouseLeave += MouseLeave1;
 
         }
         private void MouseEnter1(object sender, EventArgs e)
         {
-            btn_again.BackColor = Color.MediumSeaGreen;
+            reset_btn.BackColor = Color.MediumSeaGreen;
+            quit_btn.BackColor = Color.MediumSeaGreen;
         }
         private void MouseLeave1(object sender, EventArgs e)
         {
-            btn_again.BackColor = SystemColors.ButtonFace;
+            reset_btn.BackColor = SystemColors.ButtonFace;
+            quit_btn.BackColor = SystemColors.ButtonFace;
         }
 
-        private void btn_again_Click(object sender, EventArgs e)
-        {
-            Button btn_again = (Button)sender;
-            btn_again.Enabled = true;
-            Application.Restart();
-        }
         private void bx_click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -139,7 +138,8 @@ namespace TicTacToe_Game
                 {
                     Button btn = (Button)c;
                     btn.Enabled = false;
-                    btn_again.Enabled = true;
+                    reset_btn.Enabled = true;
+                    quit_btn.Enabled = true;
                 }//foreach end
             }//end ng try
             catch { }
@@ -186,5 +186,46 @@ namespace TicTacToe_Game
             }//end ng if
 
         }//end ng btn_leave
+
+        private void reset_btn_Click(object sender, EventArgs e)
+        {
+            //enable buttons
+            bx1.Enabled = true;
+            bx2.Enabled = true;
+            bx3.Enabled = true;
+            bx4.Enabled = true;
+            bx5.Enabled = true;
+            bx6.Enabled = true;
+            bx7.Enabled = true;
+            bx8.Enabled = true;
+            bx9.Enabled = true;
+
+            //clear texts on boxes
+            bx1.Text = "";
+            bx2.Text = "";
+            bx3.Text = "";
+            bx4.Text = "";
+            bx5.Text = "";
+            bx6.Text = "";
+            bx7.Text = "";
+            bx8.Text = "";
+            bx9.Text = "";
+
+            //reset the back colors
+            bx1.BackColor = Color.Gray;
+            bx2.BackColor = Color.Gray;
+            bx3.BackColor = Color.Gray;
+            bx4.BackColor = Color.Gray;
+            bx5.BackColor = Color.Gray;
+            bx6.BackColor = Color.Gray;
+            bx7.BackColor = Color.Gray;
+            bx8.BackColor = Color.Gray;
+            bx9.BackColor = SystemColors.Window;
+        }
+
+        private void quit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -40,9 +40,9 @@ namespace TicTacToe_Game
             this.bx7 = new System.Windows.Forms.Button();
             this.bx8 = new System.Windows.Forms.Button();
             this.bx9 = new System.Windows.Forms.Button();
-            this.btn_again = new System.Windows.Forms.Button();
             this.bg_pic = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.quit_btn = new System.Windows.Forms.Button();
             this.reset_btn = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             score_label = new System.Windows.Forms.Label();
@@ -191,26 +191,14 @@ namespace TicTacToe_Game
             this.bx9.MouseEnter += new System.EventHandler(this.btn_enter);
             this.bx9.MouseLeave += new System.EventHandler(this.btn_leave);
             // 
-            // btn_again
-            // 
-            this.btn_again.BackColor = System.Drawing.Color.Ivory;
-            this.btn_again.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_again.Location = new System.Drawing.Point(91, 518);
-            this.btn_again.Name = "btn_again";
-            this.btn_again.Size = new System.Drawing.Size(162, 56);
-            this.btn_again.TabIndex = 0;
-            this.btn_again.Text = "Play Again";
-            this.btn_again.UseVisualStyleBackColor = false;
-            this.btn_again.Click += new System.EventHandler(this.btn_again_Click);
-            // 
             // bg_pic
             // 
             this.bg_pic.BackgroundImage = global::TicTacToe_Game.Properties.Resources.bg1;
             this.bg_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bg_pic.Controls.Add(this.panel1);
+            this.bg_pic.Controls.Add(this.quit_btn);
             this.bg_pic.Controls.Add(this.reset_btn);
             this.bg_pic.Controls.Add(this.bx9);
-            this.bg_pic.Controls.Add(this.btn_again);
             this.bg_pic.Controls.Add(this.bx8);
             this.bg_pic.Controls.Add(label1);
             this.bg_pic.Controls.Add(this.bx7);
@@ -234,14 +222,25 @@ namespace TicTacToe_Game
             this.panel1.Size = new System.Drawing.Size(227, 297);
             this.panel1.TabIndex = 3;
             // 
+            // quit_btn
+            // 
+            this.quit_btn.Location = new System.Drawing.Point(362, 488);
+            this.quit_btn.Name = "quit_btn";
+            this.quit_btn.Size = new System.Drawing.Size(162, 54);
+            this.quit_btn.TabIndex = 2;
+            this.quit_btn.Text = "QUIT";
+            this.quit_btn.UseVisualStyleBackColor = true;
+            this.quit_btn.Click += new System.EventHandler(this.quit_btn_Click);
+            // 
             // reset_btn
             // 
-            this.reset_btn.Location = new System.Drawing.Point(91, 458);
+            this.reset_btn.Location = new System.Drawing.Point(84, 488);
             this.reset_btn.Name = "reset_btn";
             this.reset_btn.Size = new System.Drawing.Size(162, 54);
             this.reset_btn.TabIndex = 2;
             this.reset_btn.Text = "RESET";
             this.reset_btn.UseVisualStyleBackColor = true;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
             // TicTacToe_bx_main
             // 
@@ -272,10 +271,10 @@ namespace TicTacToe_Game
         private System.Windows.Forms.Button bx7;
         private System.Windows.Forms.Button bx8;
         private System.Windows.Forms.Button bx9;
-        private System.Windows.Forms.Button btn_again;
         private System.Windows.Forms.Panel bg_pic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button reset_btn;
+        private System.Windows.Forms.Button quit_btn;
     }
 }
 
