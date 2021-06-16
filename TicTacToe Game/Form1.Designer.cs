@@ -44,6 +44,12 @@ namespace TicTacToe_Game
             this.panel1 = new System.Windows.Forms.Panel();
             this.quit_btn = new System.Windows.Forms.Button();
             this.reset_btn = new System.Windows.Forms.Button();
+            this.label_x = new System.Windows.Forms.Label();
+            this.label_y = new System.Windows.Forms.Label();
+            this.label_Draw = new System.Windows.Forms.Label();
+            this.count_x_wins = new System.Windows.Forms.Label();
+            this.count_o_wins = new System.Windows.Forms.Label();
+            this.count_draw_wins = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             score_label = new System.Windows.Forms.Label();
             this.bg_pic.SuspendLayout();
@@ -216,10 +222,16 @@ namespace TicTacToe_Game
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.count_draw_wins);
+            this.panel1.Controls.Add(this.count_o_wins);
+            this.panel1.Controls.Add(this.count_x_wins);
+            this.panel1.Controls.Add(this.label_Draw);
+            this.panel1.Controls.Add(this.label_y);
+            this.panel1.Controls.Add(this.label_x);
             this.panel1.Controls.Add(score_label);
             this.panel1.Location = new System.Drawing.Point(362, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(227, 297);
+            this.panel1.Size = new System.Drawing.Size(227, 332);
             this.panel1.TabIndex = 3;
             // 
             // quit_btn
@@ -241,6 +253,72 @@ namespace TicTacToe_Game
             this.reset_btn.Text = "RESET";
             this.reset_btn.UseVisualStyleBackColor = true;
             this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
+            // 
+            // label_x
+            // 
+            this.label_x.AutoSize = true;
+            this.label_x.Font = new System.Drawing.Font("Hobo Std", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_x.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_x.Location = new System.Drawing.Point(0, 75);
+            this.label_x.Name = "label_x";
+            this.label_x.Size = new System.Drawing.Size(81, 91);
+            this.label_x.TabIndex = 2;
+            this.label_x.Text = "X";
+            // 
+            // label_y
+            // 
+            this.label_y.AutoSize = true;
+            this.label_y.Font = new System.Drawing.Font("Hobo Std", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_y.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_y.Location = new System.Drawing.Point(0, 166);
+            this.label_y.Name = "label_y";
+            this.label_y.Size = new System.Drawing.Size(82, 91);
+            this.label_y.TabIndex = 2;
+            this.label_y.Text = "Y";
+            // 
+            // label_Draw
+            // 
+            this.label_Draw.AutoSize = true;
+            this.label_Draw.Font = new System.Drawing.Font("Hobo Std", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_Draw.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Draw.Location = new System.Drawing.Point(-10, 274);
+            this.label_Draw.Name = "label_Draw";
+            this.label_Draw.Size = new System.Drawing.Size(134, 52);
+            this.label_Draw.TabIndex = 2;
+            this.label_Draw.Text = "DRAW";
+            // 
+            // count_x_wins
+            // 
+            this.count_x_wins.AutoSize = true;
+            this.count_x_wins.Font = new System.Drawing.Font("Futura Hv BT", 48F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.count_x_wins.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.count_x_wins.Location = new System.Drawing.Point(135, 75);
+            this.count_x_wins.Name = "count_x_wins";
+            this.count_x_wins.Size = new System.Drawing.Size(72, 77);
+            this.count_x_wins.TabIndex = 3;
+            this.count_x_wins.Text = "0";
+            // 
+            // count_o_wins
+            // 
+            this.count_o_wins.AutoSize = true;
+            this.count_o_wins.Font = new System.Drawing.Font("Futura Hv BT", 48F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.count_o_wins.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.count_o_wins.Location = new System.Drawing.Point(135, 166);
+            this.count_o_wins.Name = "count_o_wins";
+            this.count_o_wins.Size = new System.Drawing.Size(72, 77);
+            this.count_o_wins.TabIndex = 3;
+            this.count_o_wins.Text = "0";
+            // 
+            // count_draw_wins
+            // 
+            this.count_draw_wins.AutoSize = true;
+            this.count_draw_wins.Font = new System.Drawing.Font("Futura Hv BT", 48F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.count_draw_wins.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.count_draw_wins.Location = new System.Drawing.Point(135, 252);
+            this.count_draw_wins.Name = "count_draw_wins";
+            this.count_draw_wins.Size = new System.Drawing.Size(72, 77);
+            this.count_draw_wins.TabIndex = 3;
+            this.count_draw_wins.Text = "0";
             // 
             // TicTacToe_bx_main
             // 
@@ -275,6 +353,12 @@ namespace TicTacToe_Game
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button reset_btn;
         private System.Windows.Forms.Button quit_btn;
+        private System.Windows.Forms.Label count_draw_wins;
+        private System.Windows.Forms.Label count_o_wins;
+        private System.Windows.Forms.Label count_x_wins;
+        private System.Windows.Forms.Label label_Draw;
+        private System.Windows.Forms.Label label_y;
+        private System.Windows.Forms.Label label_x;
     }
 }
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace TicTacToe_Game
 {
- 
+
     public partial class TicTacToe_bx_main : Form
     {
         bool pasa = true;
@@ -21,19 +21,14 @@ namespace TicTacToe_Game
             reset_btn.MouseEnter += MouseEnter1;
             reset_btn.MouseLeave += MouseLeave1;
 
-            quit_btn.MouseEnter += MouseEnter1;
-            quit_btn.MouseLeave += MouseLeave1;
-
         }
         private void MouseEnter1(object sender, EventArgs e)
         {
             reset_btn.BackColor = Color.MediumSeaGreen;
-            quit_btn.BackColor = Color.MediumSeaGreen;
         }
         private void MouseLeave1(object sender, EventArgs e)
         {
             reset_btn.BackColor = SystemColors.ButtonFace;
-            quit_btn.BackColor = SystemColors.ButtonFace;
         }
 
         private void bx_click(object sender, EventArgs e)
@@ -117,32 +112,45 @@ namespace TicTacToe_Game
                 disableButtons();
                 String nanalo = " ";
                 if (pasa)
+                {
                     nanalo = "O";
+                    count_o_wins.Text = (Int32.Parse(count_o_wins.Text) + 1).ToString();
+                    pasa_count = 0;
+                    disableButtons();
+                }
                 else
+                {
                     nanalo = "X";
+                    count_x_wins.Text = (Int32.Parse(count_x_wins.Text) + 1).ToString();
+                    pasa_count = 0;
+                    disableButtons();
+                }
                 MessageBox.Show(nanalo + " Wins!");
             }//end ng if
             else
             {
                 if (pasa_count == 9)
+                {
                     MessageBox.Show(" Draw!");
+                    count_draw_wins.Text = (Int32.Parse(count_draw_wins.Text) + 1).ToString();
+                    pasa_count = 0;
+                    disableButtons();
+                }
             }
         }//end ng look panalo
 
         private void disableButtons()
-
         {
-            try
-            {
-                foreach (Component c in Controls)
-                {
-                    Button btn = (Button)c;
-                    btn.Enabled = false;
-                    reset_btn.Enabled = true;
-                    quit_btn.Enabled = true;
-                }//foreach end
-            }//end ng try
-            catch { }
+            bx1.Enabled = false;
+            bx2.Enabled = false;
+            bx3.Enabled = false;
+            bx4.Enabled = false;
+            bx5.Enabled = false;
+            bx6.Enabled = false;
+            bx7.Enabled = false;
+            bx8.Enabled = false;
+            bx9.Enabled = false;
+            reset_btn.Enabled = true;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -212,14 +220,14 @@ namespace TicTacToe_Game
             bx9.Text = "";
 
             //reset the back colors
-            bx1.BackColor = Color.Gray;
-            bx2.BackColor = Color.Gray;
-            bx3.BackColor = Color.Gray;
-            bx4.BackColor = Color.Gray;
-            bx5.BackColor = Color.Gray;
-            bx6.BackColor = Color.Gray;
-            bx7.BackColor = Color.Gray;
-            bx8.BackColor = Color.Gray;
+            bx1.BackColor = SystemColors.Window;
+            bx2.BackColor = SystemColors.Window;
+            bx3.BackColor = SystemColors.Window;
+            bx4.BackColor = SystemColors.Window;
+            bx5.BackColor = SystemColors.Window;
+            bx6.BackColor = SystemColors.Window;
+            bx7.BackColor = SystemColors.Window;
+            bx8.BackColor = SystemColors.Window;
             bx9.BackColor = SystemColors.Window;
         }
 
