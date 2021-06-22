@@ -50,61 +50,61 @@ namespace TicTacToe_Game
             if ((bx1.Text == bx2.Text) && (bx2.Text == bx3.Text) && (!bx1.Enabled))
             {
                 may_nanalo_na = true;
-                bx1.BackColor = Color.MediumSeaGreen;
-                bx2.BackColor = Color.MediumSeaGreen;
-                bx3.BackColor = Color.MediumSeaGreen;
+                bx1.BackColor = Color.DarkOrchid;
+                bx2.BackColor = Color.DarkOrchid;
+                bx3.BackColor = Color.DarkOrchid;
             }
             else if ((bx4.Text == bx5.Text) && (bx5.Text == bx6.Text) && (!bx4.Enabled))
             {
                 may_nanalo_na = true;
-                bx4.BackColor = Color.MediumSeaGreen;
-                bx5.BackColor = Color.MediumSeaGreen;
-                bx6.BackColor = Color.MediumSeaGreen;
+                bx4.BackColor = Color.DarkOrchid;
+                bx5.BackColor = Color.DarkOrchid;
+                bx6.BackColor = Color.DarkOrchid;
             }
             else if ((bx7.Text == bx8.Text) && (bx8.Text == bx9.Text) && (!bx7.Enabled))
             {
                 may_nanalo_na = true;
-                bx7.BackColor = Color.MediumSeaGreen;
-                bx8.BackColor = Color.MediumSeaGreen;
-                bx9.BackColor = Color.MediumSeaGreen;
+                bx7.BackColor = Color.DarkOrchid;
+                bx8.BackColor = Color.DarkOrchid;
+                bx9.BackColor = Color.DarkOrchid;
             }
             //vertical
             if ((bx1.Text == bx4.Text) && (bx4.Text == bx7.Text) && (!bx1.Enabled))
             {
                 may_nanalo_na = true;
-                bx1.BackColor = Color.MediumSeaGreen;
-                bx4.BackColor = Color.MediumSeaGreen;
-                bx7.BackColor = Color.MediumSeaGreen;
+                bx1.BackColor = Color.DarkOrchid;
+                bx4.BackColor = Color.DarkOrchid;
+                bx7.BackColor = Color.DarkOrchid;
             }
             else if ((bx2.Text == bx5.Text) && (bx5.Text == bx8.Text) && (!bx2.Enabled))
             {
                 may_nanalo_na = true;
-                bx2.BackColor = Color.MediumSeaGreen;
-                bx5.BackColor = Color.MediumSeaGreen;
-                bx8.BackColor = Color.MediumSeaGreen;
+                bx2.BackColor = Color.DarkOrchid;
+                bx5.BackColor = Color.DarkOrchid;
+                bx8.BackColor = Color.DarkOrchid;
             }
             else if ((bx3.Text == bx6.Text) && (bx6.Text == bx9.Text) && (!bx3.Enabled))
             {
                 may_nanalo_na = true;
-                bx3.BackColor = Color.MediumSeaGreen;
-                bx6.BackColor = Color.MediumSeaGreen;
-                bx9.BackColor = Color.MediumSeaGreen;
+                bx3.BackColor = Color.DarkOrchid;
+                bx6.BackColor = Color.DarkOrchid;
+                bx9.BackColor = Color.DarkOrchid;
             }
 
             //diagonal
             else if ((bx1.Text == bx5.Text) && (bx5.Text == bx9.Text) && (!bx1.Enabled))
             {
                 may_nanalo_na = true;
-                bx1.BackColor = Color.MediumSeaGreen;
-                bx5.BackColor = Color.MediumSeaGreen;
-                bx9.BackColor = Color.MediumSeaGreen;
+                bx1.BackColor = Color.DarkOrchid;
+                bx5.BackColor = Color.DarkOrchid;
+                bx9.BackColor = Color.DarkOrchid;
             }
             else if ((bx3.Text == bx5.Text) && (bx5.Text == bx7.Text) && (!bx3.Enabled))
             {
                 may_nanalo_na = true;
-                bx3.BackColor = Color.MediumSeaGreen;
-                bx5.BackColor = Color.MediumSeaGreen;
-                bx7.BackColor = Color.MediumSeaGreen;
+                bx3.BackColor = Color.DarkOrchid;
+                bx5.BackColor = Color.DarkOrchid;
+                bx7.BackColor = Color.DarkOrchid;
             }
 
             if (may_nanalo_na)
@@ -236,5 +236,14 @@ namespace TicTacToe_Game
             Application.Exit();
         }
 
+        private void label_x_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Draw_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
