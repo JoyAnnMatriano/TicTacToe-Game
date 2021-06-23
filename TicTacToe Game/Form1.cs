@@ -24,11 +24,11 @@ namespace TicTacToe_Game
         }
         private void MouseEnter1(object sender, EventArgs e)
         {
-            reset_btn.BackColor = Color.MediumSeaGreen;
+            reset_btn.BackColor = Color.DarkMagenta ;
         }
         private void MouseLeave1(object sender, EventArgs e)
         {
-            reset_btn.BackColor = SystemColors.ButtonFace;
+            reset_btn.BackColor = Color.Indigo;
         }
 
         private void bx_click(object sender, EventArgs e)
@@ -242,6 +242,11 @@ namespace TicTacToe_Game
         }
 
         private void label_Draw_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void design1_Click(object sender, EventArgs e)
         {
 
         }
