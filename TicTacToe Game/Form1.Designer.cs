@@ -42,9 +42,7 @@ namespace TicTacToe_Game
             this.bx8 = new System.Windows.Forms.Button();
             this.bx9 = new System.Windows.Forms.Button();
             this.bg_pic = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.count_draw_wins = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label_Draw = new System.Windows.Forms.Label();
             this.quit_btn = new System.Windows.Forms.Button();
             this.count_x_wins = new System.Windows.Forms.Label();
@@ -206,9 +204,7 @@ namespace TicTacToe_Game
             // 
             this.bg_pic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bg_pic.BackgroundImage")));
             this.bg_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bg_pic.Controls.Add(this.panel3);
             this.bg_pic.Controls.Add(this.count_draw_wins);
-            this.bg_pic.Controls.Add(this.panel4);
             this.bg_pic.Controls.Add(this.label_Draw);
             this.bg_pic.Controls.Add(this.quit_btn);
             this.bg_pic.Controls.Add(this.count_x_wins);
@@ -236,39 +232,25 @@ namespace TicTacToe_Game
             this.bg_pic.Size = new System.Drawing.Size(1056, 655);
             this.bg_pic.TabIndex = 2;
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(157, 369);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(16, 80);
-            this.panel3.TabIndex = 5;
-            // 
             // count_draw_wins
             // 
             this.count_draw_wins.AutoSize = true;
-            this.count_draw_wins.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.count_draw_wins.Font = new System.Drawing.Font("Futura Hv BT", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.count_draw_wins.BackColor = System.Drawing.Color.Crimson;
+            this.count_draw_wins.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.count_draw_wins.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.count_draw_wins.Location = new System.Drawing.Point(188, 472);
+            this.count_draw_wins.Location = new System.Drawing.Point(170, 466);
             this.count_draw_wins.Name = "count_draw_wins";
-            this.count_draw_wins.Size = new System.Drawing.Size(54, 57);
+            this.count_draw_wins.Size = new System.Drawing.Size(53, 60);
             this.count_draw_wins.TabIndex = 3;
             this.count_draw_wins.Text = "0";
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(157, 276);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(16, 80);
-            this.panel4.TabIndex = 5;
             // 
             // label_Draw
             // 
             this.label_Draw.AutoSize = true;
-            this.label_Draw.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.label_Draw.BackColor = System.Drawing.Color.Crimson;
             this.label_Draw.Font = new System.Drawing.Font("BABELGAMEE", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_Draw.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_Draw.Location = new System.Drawing.Point(49, 488);
+            this.label_Draw.Location = new System.Drawing.Point(49, 486);
             this.label_Draw.Name = "label_Draw";
             this.label_Draw.Size = new System.Drawing.Size(106, 38);
             this.label_Draw.TabIndex = 2;
@@ -292,11 +274,11 @@ namespace TicTacToe_Game
             // 
             this.count_x_wins.AutoSize = true;
             this.count_x_wins.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.count_x_wins.Font = new System.Drawing.Font("Futura Hv BT", 39.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.count_x_wins.Font = new System.Drawing.Font("Showcard Gothic", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.count_x_wins.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.count_x_wins.Location = new System.Drawing.Point(188, 284);
+            this.count_x_wins.Location = new System.Drawing.Point(146, 284);
             this.count_x_wins.Name = "count_x_wins";
-            this.count_x_wins.Size = new System.Drawing.Size(59, 63);
+            this.count_x_wins.Size = new System.Drawing.Size(60, 66);
             this.count_x_wins.TabIndex = 3;
             this.count_x_wins.Text = "0";
             // 
@@ -304,13 +286,14 @@ namespace TicTacToe_Game
             // 
             this.count_o_wins.AutoSize = true;
             this.count_o_wins.BackColor = System.Drawing.Color.White;
-            this.count_o_wins.Font = new System.Drawing.Font("Futura Hv BT", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.count_o_wins.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.count_o_wins.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.count_o_wins.Location = new System.Drawing.Point(188, 374);
+            this.count_o_wins.Location = new System.Drawing.Point(153, 379);
             this.count_o_wins.Name = "count_o_wins";
-            this.count_o_wins.Size = new System.Drawing.Size(54, 57);
+            this.count_o_wins.Size = new System.Drawing.Size(53, 60);
             this.count_o_wins.TabIndex = 3;
             this.count_o_wins.Text = "0";
+            this.count_o_wins.Click += new System.EventHandler(this.count_o_wins_Click);
             // 
             // reset_btn
             // 
@@ -329,23 +312,24 @@ namespace TicTacToe_Game
             // 
             this.label_y.AutoSize = true;
             this.label_y.BackColor = System.Drawing.Color.White;
-            this.label_y.Font = new System.Drawing.Font("BABELGAMEE", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_y.Font = new System.Drawing.Font("BABELGAMEE", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_y.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_y.Location = new System.Drawing.Point(69, 385);
+            this.label_y.Location = new System.Drawing.Point(77, 385);
             this.label_y.Name = "label_y";
-            this.label_y.Size = new System.Drawing.Size(44, 44);
+            this.label_y.Size = new System.Drawing.Size(54, 54);
             this.label_y.TabIndex = 2;
             this.label_y.Text = "O";
+            this.label_y.Click += new System.EventHandler(this.label_y_Click);
             // 
             // label_x
             // 
             this.label_x.AutoSize = true;
             this.label_x.BackColor = System.Drawing.Color.White;
-            this.label_x.Font = new System.Drawing.Font("BABELGAMEE", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_x.Font = new System.Drawing.Font("BABELGAMEE", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_x.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_x.Location = new System.Drawing.Point(69, 297);
+            this.label_x.Location = new System.Drawing.Point(77, 296);
             this.label_x.Name = "label_x";
-            this.label_x.Size = new System.Drawing.Size(48, 48);
+            this.label_x.Size = new System.Drawing.Size(54, 54);
             this.label_x.TabIndex = 2;
             this.label_x.Text = "X";
             this.label_x.Click += new System.EventHandler(this.label_x_Click);
@@ -353,27 +337,27 @@ namespace TicTacToe_Game
             // x_wins_btn
             // 
             this.x_wins_btn.BackColor = System.Drawing.Color.White;
-            this.x_wins_btn.Location = new System.Drawing.Point(35, 274);
+            this.x_wins_btn.Location = new System.Drawing.Point(59, 274);
             this.x_wins_btn.Name = "x_wins_btn";
-            this.x_wins_btn.Size = new System.Drawing.Size(224, 82);
+            this.x_wins_btn.Size = new System.Drawing.Size(164, 82);
             this.x_wins_btn.TabIndex = 4;
             this.x_wins_btn.UseVisualStyleBackColor = false;
             // 
             // y_wins_btn
             // 
             this.y_wins_btn.BackColor = System.Drawing.Color.White;
-            this.y_wins_btn.Location = new System.Drawing.Point(32, 369);
+            this.y_wins_btn.Location = new System.Drawing.Point(59, 369);
             this.y_wins_btn.Name = "y_wins_btn";
-            this.y_wins_btn.Size = new System.Drawing.Size(227, 78);
+            this.y_wins_btn.Size = new System.Drawing.Size(164, 78);
             this.y_wins_btn.TabIndex = 4;
             this.y_wins_btn.UseVisualStyleBackColor = false;
             // 
             // draw_wins_btn
             // 
-            this.draw_wins_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.draw_wins_btn.Location = new System.Drawing.Point(32, 467);
+            this.draw_wins_btn.BackColor = System.Drawing.Color.Crimson;
+            this.draw_wins_btn.Location = new System.Drawing.Point(29, 457);
             this.draw_wins_btn.Name = "draw_wins_btn";
-            this.draw_wins_btn.Size = new System.Drawing.Size(227, 69);
+            this.draw_wins_btn.Size = new System.Drawing.Size(227, 85);
             this.draw_wins_btn.TabIndex = 4;
             this.draw_wins_btn.UseVisualStyleBackColor = false;
             // 
@@ -430,8 +414,6 @@ namespace TicTacToe_Game
         private System.Windows.Forms.Button draw_wins_btn;
         private System.Windows.Forms.Button y_wins_btn;
         private System.Windows.Forms.Button x_wins_btn;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label design1;
     }
 }

@@ -250,5 +250,15 @@ namespace TicTacToe_Game
         {
 
         }
+
+        private void label_y_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void count_o_wins_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
