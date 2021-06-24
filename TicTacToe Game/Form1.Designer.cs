@@ -48,10 +48,10 @@ namespace TicTacToe_Game
             this.count_x_wins = new System.Windows.Forms.Label();
             this.count_o_wins = new System.Windows.Forms.Label();
             this.reset_btn = new System.Windows.Forms.Button();
-            this.label_y = new System.Windows.Forms.Label();
+            this.label_o = new System.Windows.Forms.Label();
             this.label_x = new System.Windows.Forms.Label();
             this.x_wins_btn = new System.Windows.Forms.Button();
-            this.y_wins_btn = new System.Windows.Forms.Button();
+            this.o_wins_btn = new System.Windows.Forms.Button();
             this.draw_wins_btn = new System.Windows.Forms.Button();
             this.design1 = new System.Windows.Forms.Label();
             title_lbl = new System.Windows.Forms.Label();
@@ -63,11 +63,11 @@ namespace TicTacToe_Game
             // 
             title_lbl.AutoSize = true;
             title_lbl.BackColor = System.Drawing.Color.Transparent;
-            title_lbl.Font = new System.Drawing.Font("Endgame DEMO", 65.24999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            title_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            title_lbl.Location = new System.Drawing.Point(487, 28);
+            title_lbl.Font = new System.Drawing.Font("my game", 65.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            title_lbl.ForeColor = System.Drawing.Color.Ivory;
+            title_lbl.Location = new System.Drawing.Point(452, 41);
             title_lbl.Name = "title_lbl";
-            title_lbl.Size = new System.Drawing.Size(538, 103);
+            title_lbl.Size = new System.Drawing.Size(573, 97);
             title_lbl.TabIndex = 1;
             title_lbl.Text = "TIC TAC TOE";
             // 
@@ -213,7 +213,7 @@ namespace TicTacToe_Game
             this.bg_pic.Controls.Add(this.bx9);
             this.bg_pic.Controls.Add(this.bx8);
             this.bg_pic.Controls.Add(this.bx7);
-            this.bg_pic.Controls.Add(this.label_y);
+            this.bg_pic.Controls.Add(this.label_o);
             this.bg_pic.Controls.Add(this.bx6);
             this.bg_pic.Controls.Add(this.label_x);
             this.bg_pic.Controls.Add(this.bx1);
@@ -222,7 +222,7 @@ namespace TicTacToe_Game
             this.bg_pic.Controls.Add(this.bx2);
             this.bg_pic.Controls.Add(this.bx3);
             this.bg_pic.Controls.Add(this.bx4);
-            this.bg_pic.Controls.Add(this.y_wins_btn);
+            this.bg_pic.Controls.Add(this.o_wins_btn);
             this.bg_pic.Controls.Add(this.draw_wins_btn);
             this.bg_pic.Controls.Add(score_label);
             this.bg_pic.Controls.Add(this.design1);
@@ -235,7 +235,7 @@ namespace TicTacToe_Game
             // count_draw_wins
             // 
             this.count_draw_wins.AutoSize = true;
-            this.count_draw_wins.BackColor = System.Drawing.Color.Crimson;
+            this.count_draw_wins.BackColor = System.Drawing.Color.Purple;
             this.count_draw_wins.Font = new System.Drawing.Font("Showcard Gothic", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.count_draw_wins.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.count_draw_wins.Location = new System.Drawing.Point(170, 466);
@@ -247,12 +247,12 @@ namespace TicTacToe_Game
             // label_Draw
             // 
             this.label_Draw.AutoSize = true;
-            this.label_Draw.BackColor = System.Drawing.Color.Crimson;
-            this.label_Draw.Font = new System.Drawing.Font("BABELGAMEE", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_Draw.BackColor = System.Drawing.Color.Purple;
+            this.label_Draw.Font = new System.Drawing.Font("Gameboard", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_Draw.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label_Draw.Location = new System.Drawing.Point(49, 486);
             this.label_Draw.Name = "label_Draw";
-            this.label_Draw.Size = new System.Drawing.Size(106, 38);
+            this.label_Draw.Size = new System.Drawing.Size(115, 39);
             this.label_Draw.TabIndex = 2;
             this.label_Draw.Text = "DRAW";
             this.label_Draw.Click += new System.EventHandler(this.label_Draw_Click);
@@ -260,13 +260,14 @@ namespace TicTacToe_Game
             // quit_btn
             // 
             this.quit_btn.BackColor = System.Drawing.Color.DarkMagenta;
-            this.quit_btn.Font = new System.Drawing.Font("Space Game", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.quit_btn.Font = new System.Drawing.Font("Gameboard", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.quit_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.quit_btn.Location = new System.Drawing.Point(571, 488);
+            this.quit_btn.Location = new System.Drawing.Point(515, 532);
             this.quit_btn.Name = "quit_btn";
-            this.quit_btn.Size = new System.Drawing.Size(162, 54);
+            this.quit_btn.Size = new System.Drawing.Size(106, 38);
             this.quit_btn.TabIndex = 2;
             this.quit_btn.Text = "QUIT";
+            this.quit_btn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.quit_btn.UseVisualStyleBackColor = false;
             this.quit_btn.Click += new System.EventHandler(this.quit_btn_Click);
             // 
@@ -298,28 +299,30 @@ namespace TicTacToe_Game
             // reset_btn
             // 
             this.reset_btn.BackColor = System.Drawing.Color.Indigo;
-            this.reset_btn.Font = new System.Drawing.Font("Space Game", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reset_btn.Font = new System.Drawing.Font("Gameboard", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reset_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.reset_btn.Location = new System.Drawing.Point(403, 488);
+            this.reset_btn.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.reset_btn.Location = new System.Drawing.Point(515, 488);
             this.reset_btn.Name = "reset_btn";
-            this.reset_btn.Size = new System.Drawing.Size(162, 54);
+            this.reset_btn.Size = new System.Drawing.Size(106, 38);
             this.reset_btn.TabIndex = 2;
             this.reset_btn.Text = "RESET";
+            this.reset_btn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.reset_btn.UseVisualStyleBackColor = false;
             this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
-            // label_y
+            // label_o
             // 
-            this.label_y.AutoSize = true;
-            this.label_y.BackColor = System.Drawing.Color.White;
-            this.label_y.Font = new System.Drawing.Font("BABELGAMEE", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label_y.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_y.Location = new System.Drawing.Point(77, 385);
-            this.label_y.Name = "label_y";
-            this.label_y.Size = new System.Drawing.Size(54, 54);
-            this.label_y.TabIndex = 2;
-            this.label_y.Text = "O";
-            this.label_y.Click += new System.EventHandler(this.label_y_Click);
+            this.label_o.AutoSize = true;
+            this.label_o.BackColor = System.Drawing.Color.White;
+            this.label_o.Font = new System.Drawing.Font("BABELGAMEE", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_o.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_o.Location = new System.Drawing.Point(77, 385);
+            this.label_o.Name = "label_o";
+            this.label_o.Size = new System.Drawing.Size(54, 54);
+            this.label_o.TabIndex = 2;
+            this.label_o.Text = "O";
+            this.label_o.Click += new System.EventHandler(this.label_y_Click);
             // 
             // label_x
             // 
@@ -343,18 +346,18 @@ namespace TicTacToe_Game
             this.x_wins_btn.TabIndex = 4;
             this.x_wins_btn.UseVisualStyleBackColor = false;
             // 
-            // y_wins_btn
+            // o_wins_btn
             // 
-            this.y_wins_btn.BackColor = System.Drawing.Color.White;
-            this.y_wins_btn.Location = new System.Drawing.Point(59, 369);
-            this.y_wins_btn.Name = "y_wins_btn";
-            this.y_wins_btn.Size = new System.Drawing.Size(164, 78);
-            this.y_wins_btn.TabIndex = 4;
-            this.y_wins_btn.UseVisualStyleBackColor = false;
+            this.o_wins_btn.BackColor = System.Drawing.Color.White;
+            this.o_wins_btn.Location = new System.Drawing.Point(59, 369);
+            this.o_wins_btn.Name = "o_wins_btn";
+            this.o_wins_btn.Size = new System.Drawing.Size(164, 78);
+            this.o_wins_btn.TabIndex = 4;
+            this.o_wins_btn.UseVisualStyleBackColor = false;
             // 
             // draw_wins_btn
             // 
-            this.draw_wins_btn.BackColor = System.Drawing.Color.Crimson;
+            this.draw_wins_btn.BackColor = System.Drawing.Color.Purple;
             this.draw_wins_btn.Location = new System.Drawing.Point(29, 457);
             this.draw_wins_btn.Name = "draw_wins_btn";
             this.draw_wins_btn.Size = new System.Drawing.Size(227, 85);
@@ -409,10 +412,10 @@ namespace TicTacToe_Game
         private System.Windows.Forms.Label count_o_wins;
         private System.Windows.Forms.Label count_x_wins;
         private System.Windows.Forms.Label label_Draw;
-        private System.Windows.Forms.Label label_y;
+        private System.Windows.Forms.Label label_o;
         private System.Windows.Forms.Label label_x;
         private System.Windows.Forms.Button draw_wins_btn;
-        private System.Windows.Forms.Button y_wins_btn;
+        private System.Windows.Forms.Button o_wins_btn;
         private System.Windows.Forms.Button x_wins_btn;
         private System.Windows.Forms.Label design1;
     }

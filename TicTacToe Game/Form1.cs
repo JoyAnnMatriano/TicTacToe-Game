@@ -35,9 +35,16 @@ namespace TicTacToe_Game
         {
             Button btn = (Button)sender;
             if (pasa)
-                btn.Text = "x";
+            {
+                btn.Text = "X";
+                o_turn();
+            }
             else
+            {
                 btn.Text = "O";
+                x_turn();
+            }
+
             pasa = !pasa;
             btn.Enabled = false;
             pasa_count++;
@@ -114,6 +121,7 @@ namespace TicTacToe_Game
                 if (pasa)
                 {
                     nanalo = "O";
+                    o_turn();
                     count_o_wins.Text = (Int32.Parse(count_o_wins.Text) + 1).ToString();
                     pasa_count = 0;
                     disableButtons();
@@ -121,6 +129,7 @@ namespace TicTacToe_Game
                 else
                 {
                     nanalo = "X";
+                    x_turn();
                     count_x_wins.Text = (Int32.Parse(count_x_wins.Text) + 1).ToString();
                     pasa_count = 0;
                     disableButtons();
@@ -180,9 +189,15 @@ namespace TicTacToe_Game
         {
             Button btn = (Button)sender;
             if (pasa)
+            {
                 btn.Text = "X";
+                x_turn();
+            }
             else
+            {
                 btn.Text = "O";
+                o_turn();
+            }
         }//end ng btn_enter
 
         private void btn_leave(object sender, EventArgs e)
@@ -229,6 +244,18 @@ namespace TicTacToe_Game
             bx7.BackColor = SystemColors.Window;
             bx8.BackColor = SystemColors.Window;
             bx9.BackColor = SystemColors.Window;
+
+            x_wins_btn.BackColor = Color.White;
+            label_x.BackColor = Color.White;
+            count_x_wins.BackColor = Color.White;
+
+            o_wins_btn.BackColor = Color.White;
+            label_o.BackColor = Color.White;
+            count_o_wins.BackColor = Color.White;
+
+
+
+            pasa_count = 0;
         }
 
         private void quit_btn_Click(object sender, EventArgs e)
@@ -259,6 +286,28 @@ namespace TicTacToe_Game
         private void count_o_wins_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void x_turn()
+        {
+            x_wins_btn.BackColor = Color.Gold;
+            label_x.BackColor = Color.Gold;
+            count_x_wins.BackColor = Color.Gold;
+
+            o_wins_btn.BackColor = Color.White;
+            label_o.BackColor = Color.White;
+            count_o_wins.BackColor = Color.White;
+        }
+
+        private void o_turn()
+        {
+            o_wins_btn.BackColor = Color.Gold;
+            label_o.BackColor = Color.Gold;
+            count_o_wins.BackColor = Color.Gold;
+
+            x_wins_btn.BackColor = Color.White;
+            label_x.BackColor = Color.White;
+            count_x_wins.BackColor = Color.White;
         }
     }
 }
