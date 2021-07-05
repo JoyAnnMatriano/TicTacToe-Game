@@ -255,7 +255,6 @@ namespace TicTacToe_Game
             this.label_Draw.Size = new System.Drawing.Size(115, 39);
             this.label_Draw.TabIndex = 2;
             this.label_Draw.Text = "DRAW";
-            this.label_Draw.Click += new System.EventHandler(this.label_Draw_Click);
             // 
             // quit_btn
             // 
@@ -294,7 +293,6 @@ namespace TicTacToe_Game
             this.count_o_wins.Size = new System.Drawing.Size(53, 60);
             this.count_o_wins.TabIndex = 3;
             this.count_o_wins.Text = "0";
-            this.count_o_wins.Click += new System.EventHandler(this.count_o_wins_Click);
             // 
             // reset_btn
             // 
@@ -322,7 +320,6 @@ namespace TicTacToe_Game
             this.label_o.Size = new System.Drawing.Size(54, 54);
             this.label_o.TabIndex = 2;
             this.label_o.Text = "O";
-            this.label_o.Click += new System.EventHandler(this.label_y_Click);
             // 
             // label_x
             // 
@@ -335,7 +332,6 @@ namespace TicTacToe_Game
             this.label_x.Size = new System.Drawing.Size(54, 54);
             this.label_x.TabIndex = 2;
             this.label_x.Text = "X";
-            this.label_x.Click += new System.EventHandler(this.label_x_Click);
             // 
             // x_wins_btn
             // 
@@ -376,7 +372,6 @@ namespace TicTacToe_Game
             this.design1.Size = new System.Drawing.Size(114, 80);
             this.design1.TabIndex = 6;
             this.design1.Text = "Y";
-            this.design1.Click += new System.EventHandler(this.design1_Click);
             // 
             // TicTacToe_bx_main
             // 
@@ -387,7 +382,6 @@ namespace TicTacToe_Game
             this.Name = "TicTacToe_bx_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Tic Tac Toe";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.bg_pic.ResumeLayout(false);
             this.bg_pic.PerformLayout();
             this.ResumeLayout(false);
