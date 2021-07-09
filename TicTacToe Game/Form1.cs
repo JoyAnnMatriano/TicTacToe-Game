@@ -257,6 +257,7 @@ namespace TicTacToe_Game
             label_o.BackColor = Color.White;
             count_o_wins.BackColor = Color.White;
         }
+        //===========================================PRIVATE VOID (made)
         private void o_turn() //Changing of back colors O
         {
             o_wins_btn.BackColor = Color.Gold;
