@@ -259,6 +259,7 @@ namespace TicTacToe_Game
             // quit_btn
             // 
             this.quit_btn.BackColor = System.Drawing.Color.DarkMagenta;
+            this.quit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quit_btn.Font = new System.Drawing.Font("Gameboard", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.quit_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.quit_btn.Location = new System.Drawing.Point(515, 532);
@@ -297,6 +298,7 @@ namespace TicTacToe_Game
             // reset_btn
             // 
             this.reset_btn.BackColor = System.Drawing.Color.Indigo;
+            this.reset_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reset_btn.Font = new System.Drawing.Font("Gameboard", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reset_btn.ForeColor = System.Drawing.SystemColors.Control;
             this.reset_btn.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
